@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<% include ./partials/head %>
+
+<html>
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1400px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-32">
+            <h1><a href="/"><b style="text-decoration:none">Code Blog</b></a></h1>
+        </header>
+
+        <!-- Grid -->
+        <div class="w3-row">
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Error..." style="width:10%">
+                    <div class="w3-container">
+                        <h3><b>Excel Tutorial</b></h3>
+                        <h5>Excel Javascript API Tutorial, <span class="w3-opacity">November 4, 2018</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>
+                            After playing around with the Microsoft Javascript API, i wanted to create a tutorial giving an overview of how the API can be used to make good user interfaces in excel 
+                            beyond what was possible using VBA.
+                        </p>
+                        <div class="w3-row">
+                            <div class="w3-col m8 s12">
+                                <p><button id="goToExcelTutorial" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE &raquo;</b></button></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Introduction menu -->
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-card w3-margin w3-margin-top">
+                    <div class="w3-container w3-white">
+                        <h4><b>Code Blog</b></h4>
+                        <p>Just writing them down incase i forget, and putting them online incase i loose them</p>
+                    </div>
+                </div><hr>
+
+            </div>
+
+            <!-- END GRID -->
+        </div><br>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Footer -->
+
+
+
+
+    <script>
+        var excelButton = document.getElementById('goToExcelTutorial'); 
+        excelButton.addEventListener('click', toGoExcel); 
+
+        function toGoExcel() {
+            window.location.href = '/excel/tutorial'; 
+        }
+
+    </script>
+
+</body>
+</html>
